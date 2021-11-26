@@ -97,6 +97,18 @@ a:hover {
     text-decoration: none;
 }
 
+#defcplus,#defc{
+    visibility: hidden;
+}
+
+#cplus:hover~ #defcplus{
+    visibility: visible;
+}
+
+#c:hover~ #defc{
+    visibility: visible;
+}
+
 div.mid{
 	padding-top: 2%;
 	padding-bottom: 2%;
@@ -115,11 +127,11 @@ div.mid{
     -o-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
 
-    -webkit-animation-duration: 0.5s;
-    -moz-animation-duration: 0.5s;
-    -ms-animation-duration: 0.5s;
-    -o-animation-duration: 0.5s;
-    animation-duration: 0.5s;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -ms-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
 }
 
 div.text{
@@ -144,11 +156,11 @@ div.text{
     -o-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
 
-    -webkit-animation-duration: 2s;
-    -moz-animation-duration: 2s;
-    -ms-animation-duration: 2s;
-    -o-animation-duration: 2s;
-    animation-duration: 2s;
+    -webkit-animation-duration: 2.5s;
+    -moz-animation-duration: 2.5s;
+    -ms-animation-duration: 2.5s;
+    -o-animation-duration: 2.5s;
+    animation-duration: 2.5s;
 
 }
 
@@ -197,11 +209,11 @@ main.ach{
     -o-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
 
-    -webkit-animation-duration: 0.5s;
-    -moz-animation-duration: 0.5s;
-    -ms-animation-duration: 0.5s;
-    -o-animation-duration: 0.5s;
-    animation-duration: 0.5s;
+    -webkit-animation-duration: 2.5s;
+    -moz-animation-duration: 2.5s;
+    -ms-animation-duration: 2.5s;
+    -o-animation-duration: 2.5s;
+    animation-duration: 2.5s;
 }
 
 /*for university achievements header*/
@@ -218,11 +230,11 @@ main.ach{
     -o-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
 
-    -webkit-animation-duration: 1.5s;
-    -moz-animation-duration: 1.5s;
-    -ms-animation-duration: 1.5s;
-    -o-animation-duration: 1.5s;
-    animation-duration: 1.5s;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -ms-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
 }
 
 /*university achievements*/
@@ -292,11 +304,26 @@ table{
     animation-duration: 2s;
 }
 
-th{
+.grades th{
   background:#120A8f -webkit-linear-gradient(#1560BD,#30D5C8);
   background:#120A8f -moz-linear-gradient(#1560BD,#30D5C8);
   background:#120A8f -o-linear-gradient(#1560BD,#30D5C8);
   background:#120A8f linear-gradient(#1560BD,#30D5C8);
+
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -o-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+
+  border-bottom: 2px solid #FFFFFF;
+  color: #FFFFFF;
+}
+
+.moocs th{
+    background:#177245 -webkit-linear-gradient(#00A86B,#7FFFD4);
+  background:#177245 -moz-linear-gradient(#00A86B,#7FFFD4);
+  background:#177245 -o-linear-gradient(#00A86B,#7FFFD4);
+  background:#177245 linear-gradient(#00A86B,#7FFFD4);
 
   -webkit-border-radius: 5px 5px 0 0;
   -moz-border-radius: 5px 5px 0 0;
@@ -331,6 +358,24 @@ td{
 .project-item {
     position: relative;
     overflow: hidden;
+
+    -webkit-animation-name: umScaleIn;
+    -moz-animation-name: umScaleIn;
+    -ms-animation-name: umScaleIn;
+    -o-animation-name: umScaleIn;
+    animation-name: umScaleIn;
+
+  -webkit-animation-timing-function: ease-in;
+    -moz-animation-timing-function: ease-in;
+    -ms-animation-timing-function: ease-in;
+    -o-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -ms-animation-duration: 2s;
+    -o-animation-duration: 2s;
+    animation-duration: 2s;
 }
 
 .project-item img {
